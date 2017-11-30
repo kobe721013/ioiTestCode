@@ -32,7 +32,9 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         
         self.pageViewController.setViewControllers([initialContenViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
         
-        self.pageViewController.view.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: self.view.frame.size.height-100)
+        
+        print("tabBarH=\(String(describing: self.tabBarController?.tabBar.frame.size.height)), ViewH=\(self.view.frame.size.height)")
+        self.pageViewController.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height-(self.tabBarController?.tabBar.frame.size.height)!)
         
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)

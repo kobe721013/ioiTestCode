@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="11Y-Er-fRJ">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J3s-ld-dtK">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,8 +14,8 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MyNewUIPageViewControllerExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="hHv-tm-61W"/>
+                        <viewControllerLayoutGuide type="bottom" id="68F-zQ-cxm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -32,15 +32,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392" y="324"/>
+            <point key="canvasLocation" x="861" y="324"/>
         </scene>
         <!--The Next View Controller-->
         <scene sceneID="BAr-uP-WIM">
             <objects>
                 <viewController storyboardIdentifier="TheNextViewController" id="hUo-UO-Edi" customClass="TheNextViewController" customModule="MyNewUIPageViewControllerExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="q17-4c-Pks"/>
-                        <viewControllerLayoutGuide type="bottom" id="td3-DU-urI"/>
+                        <viewControllerLayoutGuide type="top" id="jaK-ls-xYt"/>
+                        <viewControllerLayoutGuide type="bottom" id="FyI-li-Yi3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tdd-rx-7cz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -59,12 +59,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nxu-gt-Pg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1235" y="326"/>
+            <point key="canvasLocation" x="1631.25" y="325.35211267605632"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="OJl-qP-idF">
             <objects>
-                <pageViewController storyboardIdentifier="MyPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="abi-3Z-6RA" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="MyPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="abi-3Z-6RA" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7K-K4-eGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1033" y="1167"/>
@@ -74,8 +76,8 @@
             <objects>
                 <viewController storyboardIdentifier="TutorialPageContentHolderViewController" id="Dqd-x5-diM" customClass="TutorialPageContentHolderViewController" customModule="MyNewUIPageViewControllerExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fR9-GB-eAT"/>
-                        <viewControllerLayoutGuide type="bottom" id="WBM-eS-wPo"/>
+                        <viewControllerLayoutGuide type="top" id="LVG-kC-sLA"/>
+                        <viewControllerLayoutGuide type="bottom" id="vfZ-eQ-9t6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5CG-vy-PF6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -96,13 +98,14 @@
             </objects>
             <point key="canvasLocation" x="1734" y="1168"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="NER-5O-JXR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="11Y-Er-fRJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="NsC-b1-wTA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9oy-ZT-Jhb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -112,7 +115,24 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovr-w0-QcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-291" y="325"/>
+            <point key="canvasLocation" x="105" y="324.2957746478873"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VQa-gK-HRb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="J3s-ld-dtK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sOD-9K-a60">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="11Y-Er-fRJ" kind="relationship" relationship="viewControllers" id="9IY-Cw-YCJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stx-Jw-IUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-795" y="325"/>
         </scene>
     </scenes>
 </document>
